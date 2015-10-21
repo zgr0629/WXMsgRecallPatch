@@ -1,0 +1,11 @@
+Package: com.darwindev.WXMsgRecallPatch
+Name: WeChat Message Recall Patch
+Version: 0.1-1
+Description: Refuse to recall any messages.
+Section: Tweaks
+Depends: firmware (>= 5.0), mobilesubstrate
+Architecture: iphoneos-arm
+Author: i_82 <i.82@me.com>
+Homepage: https://82flex.com
+Maintainer: i_82 <i.82@me.com>
+Sponsor: 82Flex <https://82flex.com>

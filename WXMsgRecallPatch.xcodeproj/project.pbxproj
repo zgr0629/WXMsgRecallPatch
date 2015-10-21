@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F4B0E2C1BD7CBD7009681A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4B0E2B1BD7CBD7009681A9 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		0F4B0E371BD7CBD7009681A9 /* WXMsgRecallPatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B0E361BD7CBD7009681A9 /* WXMsgRecallPatch.mm */; };
+		0F4B0E421BD7CC04009681A9 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4B0E411BD7CC04009681A9 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F4B0E281BD7CBD7009681A9 /* WXMsgRecallPatch.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WXMsgRecallPatch.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4B0E2B1BD7CBD7009681A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F4B0E311BD7CBD7009681A9 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0F4B0E331BD7CBD7009681A9 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0F4B0E341BD7CBD7009681A9 /* WXMsgRecallPatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXMsgRecallPatch-Prefix.pch"; sourceTree = "<group>"; };
+		0F4B0E351BD7CBD7009681A9 /* WXMsgRecallPatch.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = WXMsgRecallPatch.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F4B0E361BD7CBD7009681A9 /* WXMsgRecallPatch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WXMsgRecallPatch.mm; sourceTree = "<group>"; };
+		0F4B0E3B1BD7CBD7009681A9 /* WXMsgRecallPatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WXMsgRecallPatch.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WXMsgRecallPatch.plist; sourceTree = "<group>"; };
+		0F4B0E411BD7CC04009681A9 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/theos/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F4B0E241BD7CBD7009681A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4B0E421BD7CC04009681A9 /* libsubstrate.dylib in Frameworks */,
+				0F4B0E2C1BD7CBD7009681A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4B0E1D1BD7CBD7009681A9 = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E2D1BD7CBD7009681A9 /* WXMsgRecallPatch */,
+				0F4B0E2A1BD7CBD7009681A9 /* Frameworks */,
+				0F4B0E291BD7CBD7009681A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F4B0E291BD7CBD7009681A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E281BD7CBD7009681A9 /* WXMsgRecallPatch.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F4B0E2A1BD7CBD7009681A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E411BD7CC04009681A9 /* libsubstrate.dylib */,
+				0F4B0E2B1BD7CBD7009681A9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F4B0E2D1BD7CBD7009681A9 /* WXMsgRecallPatch */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E351BD7CBD7009681A9 /* WXMsgRecallPatch.xm */,
+				0F4B0E361BD7CBD7009681A9 /* WXMsgRecallPatch.mm */,
+				0F4B0E2E1BD7CBD7009681A9 /* Package */,
+				0F4B0E321BD7CBD7009681A9 /* Supporting Files */,
+			);
+			path = WXMsgRecallPatch;
+			sourceTree = "<group>";
+		};
+		0F4B0E2E1BD7CBD7009681A9 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E2F1BD7CBD7009681A9 /* DEBIAN */,
+				0F4B0E381BD7CBD7009681A9 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0F4B0E2F1BD7CBD7009681A9 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E311BD7CBD7009681A9 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0F4B0E321BD7CBD7009681A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E331BD7CBD7009681A9 /* PackageVersion.plist */,
+				0F4B0E341BD7CBD7009681A9 /* WXMsgRecallPatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F4B0E381BD7CBD7009681A9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E391BD7CBD7009681A9 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F4B0E391BD7CBD7009681A9 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E3A1BD7CBD7009681A9 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		0F4B0E3A1BD7CBD7009681A9 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B0E3B1BD7CBD7009681A9 /* WXMsgRecallPatch.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F4B0E251BD7CBD7009681A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F4B0E271BD7CBD7009681A9 /* WXMsgRecallPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4B0E3E1BD7CBD7009681A9 /* Build configuration list for PBXNativeTarget "WXMsgRecallPatch" */;
+			buildPhases = (
+				0F4B0E221BD7CBD7009681A9 /* ShellScript */,
+				0F4B0E231BD7CBD7009681A9 /* Sources */,
+				0F4B0E241BD7CBD7009681A9 /* Frameworks */,
+				0F4B0E251BD7CBD7009681A9 /* Headers */,
+				0F4B0E261BD7CBD7009681A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WXMsgRecallPatch;
+			productName = WXMsgRecallPatch;
+			productReference = 0F4B0E281BD7CBD7009681A9 /* WXMsgRecallPatch.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F4B0E1E1BD7CBD7009681A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F4B0E271BD7CBD7009681A9 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 0F4B0E211BD7CBD7009681A9 /* Build configuration list for PBXProject "WXMsgRecallPatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F4B0E1D1BD7CBD7009681A9;
+			productRefGroup = 0F4B0E291BD7CBD7009681A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F4B0E271BD7CBD7009681A9 /* WXMsgRecallPatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4B0E221BD7CBD7009681A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		0F4B0E261BD7CBD7009681A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F4B0E231BD7CBD7009681A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4B0E371BD7CBD7009681A9 /* WXMsgRecallPatch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F4B0E3C1BD7CBD7009681A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0F4B0E3D1BD7CBD7009681A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0F4B0E3F1BD7CBD7009681A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WXMsgRecallPatch/WXMsgRecallPatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0F4B0E401BD7CBD7009681A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WXMsgRecallPatch/WXMsgRecallPatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F4B0E211BD7CBD7009681A9 /* Build configuration list for PBXProject "WXMsgRecallPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4B0E3C1BD7CBD7009681A9 /* Debug */,
+				0F4B0E3D1BD7CBD7009681A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4B0E3E1BD7CBD7009681A9 /* Build configuration list for PBXNativeTarget "WXMsgRecallPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4B0E3F1BD7CBD7009681A9 /* Debug */,
+				0F4B0E401BD7CBD7009681A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F4B0E1E1BD7CBD7009681A9 /* Project object */;
+}
